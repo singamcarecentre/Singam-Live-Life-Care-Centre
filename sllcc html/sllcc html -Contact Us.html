@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Singam Live & Life Care Centre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        :root {
+            --s: 60px;
+            --c1: #f8b195;
+            --c2: #355c7d;
+            --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+                  var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%, var(--c2) 66% 76%,
+                  var(--c1) 76% 86%, var(--c2) 86% 96%;
+        }
+
+        body {
+            background: radial-gradient(
+                        100% 100% at 100% 0,
+                        var(--c1) 4%,
+                        var(--_g),
+                        #0008 96%,
+                        #0000
+                      ),
+                      radial-gradient(
+                        100% 100% at 0 100%,
+                        #0000,
+                        #0008 4%,
+                        var(--_g),
+                        var(--c1) 96%
+                      )
+                      var(--c1);
+            background-size: var(--s) var(--s);
+            animation: wave 6s infinite linear;
+            display: flex;
+            flex-direction: column;
+        }
+		
+		.navbar {
+            display: flex;
+            justify-content: space-between;
+			align-items: center;
+            background: #355c7d;
+            padding: 2px 0;
+        }
+		
+		/* Logo & Name Section */
+        .navlogo-container {
+            display: flex;
+            align-items: center;
+			
+		}
+		
+		.navlogo-container img {
+             height: 30px;  /* Adjust the size */
+			 width: 30px;   /* Ensure it's a perfect square */ 
+			 border-radius: 10%; /* Makes it round */
+			 border: 1px solid white; /* Optional: Adds a white border */
+			 object-fit: cover; /* Ensures the image fills the circle */
+        }
+
+        .navlogo-container h1 {
+            color: white;
+            font-size: 18px;
+        }
+		
+		  /* Navigation Links */
+        .nav-links {
+            display: flex;
+        }
+		
+		.nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+		
+		.nav-links a:hover {
+            background: #f67280;
+        }
+
+        .hero, .footer {
+            width: 100%;
+            height: 19vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: inherit;
+        }
+
+        @keyframes wave {
+            0% { background-position: 0px 0px; }
+            50% { background-position: 50px 50px; }
+            100% { background-position: 0px 0px; }
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+			color: white;
+			padding: 8px;
+			text-align: center;
+        }
+
+        .main-container {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+			padding: 10px;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 80%;
+            max-width: 1200px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+               /* Highlighted message box */
+        .highlight-text {
+            background: #fdf6da;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 10px auto;
+        }
+
+       /* Contact Information */
+
+        .contact-box {
+            width: 250px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .contact-box a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 16px;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-text {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #2c3e50;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+		
+        .logo-container {
+		   display: flex;
+		   justify-content: center; /* Centers horizontally */
+		   align-items: center; /* Centers vertically */
+		   margin: 0px 0; /* Adds space above and below */
+        }
+		
+		/* Logo Styling */
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 20px 0;
+			display: block;
+        }
+
+        .footer {
+            height: 19vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #355c7d;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .footer .btn:hover {
+            background: #f8b195;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- Logo & Name -->
+        <div class="navlogo-container">
+            <img src="logo.png" alt="Singam Care Logo">
+            <h1>Singam Live & Life Care</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="sllcc html.html">Home</a>
+            <a href="sllcc html -About Us.html">About Us</a>
+            <a href="sllcc html -Our Services.html">Our Services</a>
+            <a href="sllcc html -Our Location.html">Our Location</a>
+            <a href="sllcc html -Contact Us.html">Contact Us</a>
+        </div>
+    </div>
+
+    <h1>Contact Us</h1>
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="contact-container">
+          <p class="highlight-text">
+        If you are interested in our services or have any questions, please don’t hesitate to contact us through the options below.
+        </p>
+        <div class="logo-container">
+          <div class="contact-box">
+            <h3>WHATSAPP</h3>
+            <a href="tel:0166686590">016-6686590 (Mr. Raj)</a><br>
+            <a href="tel:01153634453">011-53634453 (Office)</a>
+          </div>
+          
+          <img src="logo.png" alt="Singam Life Care Logo" class="logo">
+          
+          <!-- Phone Number Section -->
+          <div class="contact-box">
+            <h3>PHONE NUMBER</h3>
+            <a href="tel:0166686590">016-6686590 (Mr. Raj)</a><br>
+            <a href="tel:0136308206">013-6308206 (Mr. Singam)</a><br>
+            <a href="tel:01153634453">011-53634453 (Office)</a>
+          </div>
+        </div> <!-- Replace with your actual logo path -->
+           
+        <div class="logo-container">
+           <!-- Email Section -->
+          <div class="contact-box">
+            <h3>EMAIL ADDRESS</h3>
+            <a href="mailto:singamcarecentre@gmail.com">singamcarecentre@gmail.com</a>
+          </div>
+          <div class="contact-box">
+            <!-- Facebook Section -->
+            <h3>FACEBOOK</h3>
+            <a href="https://www.facebook.com/yourpage" target="_blank">Singam Live & Life Care Centre</a><br>
+            <a href="https://www.facebook.com/yourcaregiverpage" target="_blank">Singam Nursing Home Caregiver</a>
+          </div>
+         </div>
+        
+        <p class="contact-text">
+        Also, PLEASE do contact us if you are interested in donating anything for our home. Thank You! <br>
+        Together, we can provide meals, shelter, and a better life for those facing hardship. Your support matters! <br>
+        <b>Our Resident, Our Concern</b>
+        </p> 
+        </div>
+    </div>
+
+
+    
+
+</body>
+</html>
